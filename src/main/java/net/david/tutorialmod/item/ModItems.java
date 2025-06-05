@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item PV_TOKEN = registerItem("pv_token", new Item(new Item.Settings()));
+    public static final Item RAW_PV_TOKEN = registerItem("raw_pv_token", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
@@ -19,6 +20,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
            entries.add(PV_TOKEN);
+           entries.add(RAW_PV_TOKEN);
         });
     }
 }
