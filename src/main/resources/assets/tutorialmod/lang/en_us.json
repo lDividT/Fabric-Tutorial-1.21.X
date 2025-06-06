@@ -1,4 +1,6 @@
 {
   "item.tutorialmod.pv_token": "PV Token",
-  "item.tutorialmod.raw_pv_token": "Raw PV Token"
+  "item.tutorialmod.raw_pv_token": "Raw PV Token",
+
+  "block.tutorialmod.token_block": "Block of Tokens"
 }
